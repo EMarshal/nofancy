@@ -28,7 +28,7 @@ body {
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	height:100%;
+	height:2em;
 }
 
 .navbar li {
@@ -37,6 +37,7 @@ body {
 	margin-right:10px;
 	margin-bottom: 0;
 	top:50%;
+	transform: translateY(-50%);
 }
 
 .navbar a {
@@ -190,8 +191,6 @@ body {
 		margin-bottom:5px;
 		margin-right:0;
 		transform: translateY(0);
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
 	}
 
 	.navbar ul {
