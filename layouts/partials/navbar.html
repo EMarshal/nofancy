@@ -9,12 +9,12 @@
   <div class="container">
 	<div class="row">
 	  <div class="eight columns offset-by-two">
-		<ul class="">
+		<ul>
 		  {{ $burl := .Site.BaseUrl }}
-		  <li class="u-pull-left"> <a href="{{ $burl }}" class="brand" style="font-weight:bold;font-size:normal"> {{ .Site.Title }} </a></li>
-		  <li class="u-pull-right cate"> <a href="{{ $burl }}/about/" class=""> About </a></li>
+		  <li class="u-pull-left"> <a href="{{ $burl }}" class="brand"> {{ .Site.Title }} </a></li>
+		  <li class="u-pull-right cate"> <a href="{{ $burl }}/about/"> About </a></li>
 		  {{ range $name, $pages := .Site.Taxonomies.categories }}
-		  <li class="u-pull-right cate"> <a href="{{ $burl }}/categories/{{ $name | urlize }}" class=""> {{ $name | title }} </a></li>
+		  <li class="u-pull-right cate"> <a href="{{ $burl }}/categories/{{ $name | urlize }}"> {{ $name | title }} </a></li>
 		  {{ end }}
 		</ul>
 	  </div>
