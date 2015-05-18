@@ -44,12 +44,10 @@ body {
 	color:#333;
 	text-transform:uppercase;
 	text-decoration:none;
-	font-size:bold;
 }
 
 .brand {
 	font-weight:bold;
-	font-size:normal !important;
 }
 
 .cate {
@@ -141,7 +139,7 @@ body {
 
 .post h4 {
 	font-size:21px;
-	font-weight: boldl;
+	font-weight: bold;
 	color:#2d2d2d;
 	letter-spacing:normal;
 }
