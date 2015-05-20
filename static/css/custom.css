@@ -18,6 +18,7 @@ body {
 	display:block;
 	border-bottom: 1px solid #eee;
 	margin-bottom:10px;
+	margin-top: 10px;
 	height:2em;
 	width:100%;
 }
@@ -28,7 +29,7 @@ body {
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	height:2em;
+	height:100%;
 }
 
 .navbar li {
@@ -36,8 +37,6 @@ body {
 	position: relative;
 	margin-right:10px;
 	margin-bottom: 0;
-	top:50%;
-	transform: translateY(-50%);
 }
 
 .navbar a {
