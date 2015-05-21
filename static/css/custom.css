@@ -40,7 +40,6 @@ body {
     }
 
     .navbar a {
-        color: #333;
         text-transform: uppercase;
         text-decoration: none;
     }
@@ -96,7 +95,6 @@ body {
     z-index: 9;
     display: block;
     font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
-    color: #484848;
     overflow: auto;
     padding: 0;
     padding-bottom: 1em;
@@ -118,42 +116,36 @@ body {
     .post h1 {
         font-size: 28px;
         font-weight: bold;
-        color: #2d2d2d;
         letter-spacing: normal;
     }
 
     .post h2 {
         font-size: 25px;
         font-weight: bold;
-        color: #2d2d2d;
         letter-spacing: normal;
     }
 
     .post h3 {
         font-size: 23px;
         font-weight: bold;
-        color: #2d2d2d;
         letter-spacing: normal;
     }
 
     .post h4 {
         font-size: 21px;
         font-weight: bold;
-        color: #2d2d2d;
         letter-spacing: normal;
     }
 
     .post h5 {
         font-size: 19px;
         font-weight: bold;
-        color: #2d2d2d;
         letter-spacing: normal;
     }
 
     .post h6 {
         font-size: 18px;
         font-weight: bold;
-        color: #2d2d2d;
         letter-spacing: normal;
     }
 
@@ -169,7 +161,6 @@ body {
 #post-title h5 {
     font-weight: bold;
     font-family: proxima-nova, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-    color: #2d2d2d;
     font-size: 35px;
     letter-spacing: normal;
 }
