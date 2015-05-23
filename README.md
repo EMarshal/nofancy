@@ -2,21 +2,6 @@
 
 Yet another [Hugo](http://hugo.spf13.com) blog theme made by love. It tries to use less design to provide full functionalities.
 
-
-### Snapshots
-
-List view:
-
-<img src="https://raw.githubusercontent.com/gizak/nofancy/master/images/list.png" width="800">
-
-Content view:
-
-<img src="https://raw.githubusercontent.com/gizak/nofancy/master/images/content.png" width="800">
-
-Mobile devices
-
-<img src="https://raw.githubusercontent.com/gizak/nofancy/master/images/mobile.png" width="400">
-
 ### Basic ideas
 
 Are you tired of all that emerging design concepts like flat or material? Are you sick of getting distracted when pages filled up with those fancy nonsense? Here I brought up a new distraction-free theme: nofancy.
@@ -24,11 +9,8 @@ Are you tired of all that emerging design concepts like flat or material? Are yo
 Some ideas behind this:
 
 1. Do subtraction instead of addition.
-
 2. The blog's content matters (SNS things then after).
-
 3. Clean, high readability and mobile-friendly.
-
 4. Full stack support (sorting contents by categories, tags, series; Google Analytics; SNS & email links...)
 
 ### Syntax highlight
