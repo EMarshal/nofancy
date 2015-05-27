@@ -15,17 +15,6 @@ Some ideas behind this:
 
 ### Syntax highlight
 Use [GitHub flavoured markdown](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) to write your code snippets in posts, it will auto highlighted after running `hugo`.
-Current languages supported by included [highlight.js](https://highlightjs.org/):
-* C#
-* CSS
-* Diff
-* HTML, XML
-* HTTP
-* JSON
-* JavaScript
-* Markdown
-* PowerShell
-* R
 
 ### Config
 
