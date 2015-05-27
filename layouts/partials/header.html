@@ -24,9 +24,9 @@
     {{ if .Site.Params.highlight }}
     <link rel="stylesheet" href="{{ .Site.BaseUrl }}highlight/styles/{{ .Site.Params.highlight }}.css">
     {{ else }}
-    <link rel="stylesheet" href="{{ .Site.BaseUrl }}highlight/styles/default.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
     {{ end }}
-    <script src="{{ .Site.BaseUrl }}highlight/highlight.pack.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
 </head>
