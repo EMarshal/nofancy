@@ -5,11 +5,11 @@ html {
 }
 
 body {
-    background-color: rgb(249,249,249);
+    background-color: #F7F7F7;
 }
 
 .nav-menu {
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid #EEE;
     white-space: normal;
 }
 
@@ -70,13 +70,12 @@ body {
 
 .footnote {
     font-family: verdana,arial,helvetica,sans-serif;
-    color: #888;
+    color: #777;
     font-size: x-small;
-    margin-bottom: 0;
 }
 
     .footnote a {
-        color: #888 !important;
+        color: #777 !important;
     }
 
         .footnote a:hover {
@@ -94,12 +93,12 @@ body {
 
 
 .footer-content {
-    border-top: 1px solid #e3e3e3;
+    border-top: 1px solid #EEE;
 }
 
     .footer-content a {
         font-size: 80%;
-        color: #bbb;
+        color: #aaa;
     }
 
     .footer-content ul {
@@ -112,14 +111,14 @@ body {
 
 #gototop-btn {
     display: inline-block;
-    color: #bbb;
+    color: #aaa;
     font-size: 80%;
 }
 
 #foot-name {
     text-transform: none;
     font-size: 80%;
-    color: #bbb;
+    color: #aaa;
 }
 
 .post {
