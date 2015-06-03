@@ -28,12 +28,12 @@ body {
 
         .header ul li a {
             font-weight: 600;
-            font-family: "Corbel", "Avenir", sans-serif;
+            font-family: "Corbel", "Avenir Next", sans-serif;
         }
 
     .header .site-title {
         font-weight: 600;
-        font-family: "Corbel", "Avenir", sans-serif;
+        font-family: "Corbel", "Avenir Next", sans-serif;
     }
 
 .pull-right {
@@ -45,7 +45,7 @@ body {
     font-weight: 600;
     padding-left: 1em;
     margin-top: 1em;
-    font-family: "Corbel", "Avenir", sans-serif;
+    font-family: "Corbel", "Avenir Next", sans-serif;
 }
 
 .posts {
