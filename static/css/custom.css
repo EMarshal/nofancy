@@ -18,10 +18,6 @@ body {
     margin-bottom: .5em;
 }
 
-    .header .desktop ul {
-        float: right;
-    }
-
     .header ul li {
         height: auto;
     }
@@ -188,88 +184,88 @@ body {
         margin-bottom: 0;
     }
 
-
-@media screen and (max-width:767px) {
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .menu-btn {
-        padding: .5em 1em;
-        text-decoration: none;
-        color: #484848;
-        font-weight: bold;
-    }
-
-    #toggle-content li {
-        clear: both;
-        height: auto;
-        background-color: rgb(249,249,249);
-    }
-
-    #toggle-home {
-        display: inline-block;
-    }
+.menu-btn {
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #484848;
+    font-weight: bold;
 }
+
+#toggle-content li {
+    clear: both;
+    height: auto;
+    background-color: #F7F7F7;
+}
+
 
 @media screen and (min-width:768px) {
-    .mobile {
+    .menu-btn {
         display: none;
     }
 
-    .desktop {
-        display: block;
+    .back {
+        display: none;
+    }
+
+    #toggle-content {
+        float: right;
     }
 }
 
-body:not(:target) #menu {
-  position: relative;
-  z-index: 8;
-}
+@media screen and (max-width:767px) {
+    #toggle-content {
+        display: block;
+    }
 
-body:not(:target) #menu li {
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-}
+    body:not(:target) #menu ul {
+        position: relative;
+        z-index: 8;
+        display: none;
+    }
 
-body:not(:target) #menu:target li {
-  height: 2em;
-  line-height: auto;
-  overflow: visible;
-}
+    body:not(:target) #menu li {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
 
-body:not(:target) #menu:target #show-btn {
-  display: none;
-}
+    body:not(:target) #menu:target li {
+        height: 2em;
+        overflow: visible;
+    }
 
-body:not(:target) #menu:target #hide-btn {
-  display: inline;
-}
+    body:not(:target) #menu:target ul {
+        display: block;
+    }
 
-body:not(:target) #hide-btn {
-  display: none;
-}
+    body:not(:target) #menu:target #show-btn {
+        display: none;
+    }
 
-body:not(:target) #menu:target .back {
-  height: 0;
-  line-height: 0;
-}
+    body:not(:target) #menu:target #hide-btn {
+        display: inline;
+    }
 
-body:not(:target) #menu:target .back a {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  height: auto;
-  position: absolute;
-  top: -101em;
-  bottom: -101em;
-  left: 0;
-  right: 0;
-  text-indent: -999em;
-  z-index: -1;
+    body:not(:target) #hide-btn {
+        display: none;
+    }
+
+    body:not(:target) #menu:target .back {
+        height: 0;
+        line-height: 0;
+    }
+
+        body:not(:target) #menu:target .back a {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            height: auto;
+            position: absolute;
+            top: -101em;
+            bottom: -101em;
+            left: 0;
+            right: 0;
+            text-indent: -999em;
+            z-index: -1;
+        }
 }
