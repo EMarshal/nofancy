@@ -198,8 +198,7 @@ body {
         display: block;
     }
 
-    #toggle-btn {
-        display: inline-block;
+    .menu-btn {
         padding: .5em 1em;
         text-decoration: none;
         color: #484848;
@@ -225,4 +224,52 @@ body {
     .desktop {
         display: block;
     }
+}
+
+body:not(:target) #menu {
+  position: relative;
+  z-index: 8;
+}
+
+body:not(:target) #menu li {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+body:not(:target) #menu:target li {
+  height: 2em;
+  line-height: auto;
+  overflow: visible;
+}
+
+body:not(:target) #menu:target #show-btn {
+  display: none;
+}
+
+body:not(:target) #menu:target #hide-btn {
+  display: inline;
+}
+
+body:not(:target) #hide-btn {
+  display: none;
+}
+
+body:not(:target) #menu:target .back {
+  height: 0;
+  line-height: 0;
+}
+
+body:not(:target) #menu:target .back a {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  height: auto;
+  position: absolute;
+  top: -101em;
+  bottom: -101em;
+  left: 0;
+  right: 0;
+  text-indent: -999em;
+  z-index: -1;
 }
