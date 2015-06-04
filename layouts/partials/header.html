@@ -14,13 +14,7 @@
     <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/pure-min.css&amp;pure/0.6.0/grids-responsive-min.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
-
-    <!--- highlight js -->
-    {{ if .Site.Params.highlight }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}highlight/styles/{{ .Site.Params.highlight }}.css">
-    {{ else }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
-    {{ end }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/monokai.css">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
