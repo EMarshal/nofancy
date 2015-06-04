@@ -220,7 +220,8 @@ body {
     body:not(:target) #menu ul {
         position: relative;
         z-index: 8;
-        display: none;
+        height: 0;
+        transition: height 0.2s;
     }
 
     body:not(:target) #menu li {
@@ -236,6 +237,8 @@ body {
 
     body:not(:target) #menu:target ul {
         display: block;
+        height: 2em;
+        transition: height 0.2s;
     }
 
     body:not(:target) #menu:target #show-btn {
