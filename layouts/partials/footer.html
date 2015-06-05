@@ -13,7 +13,9 @@
 
                 {{ if .Site.Author.github }}
                 <li class="pure-menu-item">
-                    <a href="https://github.com/{{ .Site.Author.github }}" class="pure-menu-link">GitHub</a>
+                    <a href="https://github.com/{{ .Site.Author.github }}" class="pure-menu-link">
+                        <img src="{{ .Site.BaseURL }}img/GitHub-Mark-64px.png" alt="GitHub" width="24" height="24" />
+                    </a>
                 </li>
                 {{ end }}
 
