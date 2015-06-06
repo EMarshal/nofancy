@@ -98,14 +98,23 @@ body {
         color: #aaa;
     }
     
-    .footer-content a.github {
+    .footer-content a.social {
+        font-size: 100%;
         margin: .5em 1em;
         padding: 0;
         text-indent: -9999px;
-        border-radius: 50%;
         height: 24px;
         width: 24px;
+    }
+    
+    .footer-content a.github {
+        border-radius: 50%;
         background: url("/img/GitHub-Mark-64px.png") no-repeat top left/100%;
+    }
+    
+    .footer-content a.feed {
+        border-radius: 20%;
+        background: url("/img/feed-icon.svg") no-repeat top left/100%;
     }
 
     .footer-content ul {

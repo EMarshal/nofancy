@@ -5,37 +5,34 @@
             <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
             <ul>
                 <li class="pure-menu-heading" id="foot-name">{{ .Site.Author.name }}:</li>
-
                 {{ if .Site.Author.email }}
                 <li class="pure-menu-item">
                     <a href="mailto:{{ .Site.Author.email }}" class="pure-menu-link">Email</a>
                 </li>
                 {{ end }}
-
                 {{ if .Site.Author.github }}
                 <li class="pure-menu-item">
-                    <a href="https://github.com/{{ .Site.Author.github }}" class="pure-menu-link github">GitHub</a>
+                    <a href="https://github.com/{{ .Site.Author.github }}" target="_blank" class="pure-menu-link social github">GitHub</a>
                 </li>
                 {{ end }}
-
+                <li class="pure-menu-item">
+                    <a href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" target="_blank" class="pure-menu-link social feed">Feed</a>
+                </li>
                 {{ if .Site.Author.linkedin }}
                 <li class="pure-menu-item">
-                    <a href="https://www.linkedin.com/in/{{ .Site.Author.linkedin }}" class="pure-menu-link">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/{{ .Site.Author.linkedin }}" target="_blank" class="pure-menu-link">LinkedIn</a>
                 </li>
                 {{ end }}
-
                 {{ if .Site.Author.facebook }}
                 <li class="pure-menu-item">
-                    <a href="https://www.facebook.com/{{ .Site.Author.facebook }}" class="pure-menu-link">Facebook</a>
+                    <a href="https://www.facebook.com/{{ .Site.Author.facebook }}" target="_blank" class="pure-menu-link">Facebook</a>
                 </li>
                 {{ end }}
-
                 {{ if .Site.Author.twitter }}
                 <li class="pure-menu-item">
-                    <a href="https://twitter.com/{{ .Site.Author.twitter }}" class="pure-menu-link">Twitter</a>
+                    <a href="https://twitter.com/{{ .Site.Author.twitter }}" target="_blank" class="pure-menu-link">Twitter</a>
                 </li>
                 {{ end }}
-
             </ul>
         </div>
     </div>
