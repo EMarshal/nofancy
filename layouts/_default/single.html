@@ -8,7 +8,9 @@
 
             <div class="post-title">
                 <p class="footnote">
+                    {{ if eq .Type "post" }}
                     <time class="">{{ .Date.Format "2006-01-02" }}</time>
+                    {{ end }}
                     {{ $baseurl := .Site.BaseURL }}
                     {{ if or .Params.tags .Params.categories .Params.series }}
                     |
