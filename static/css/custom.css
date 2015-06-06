@@ -97,6 +97,16 @@ body {
         font-size: 80%;
         color: #aaa;
     }
+    
+    .footer-content a.github {
+        margin: .5em 1em;
+        padding: 0;
+        text-indent: -9999px;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        background: url("/img/GitHub-Mark-64px.png") no-repeat top left/100%;
+    }
 
     .footer-content ul {
         height: auto;
