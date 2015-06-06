@@ -279,13 +279,9 @@ body {
     }
 
         body:not(:target) #menu:target .back a {
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            height: auto;
-            position: absolute;
-            top: -101em;
-            bottom: -101em;
+            height: 100%;
+            position: fixed;
+            top: 0;
             left: 0;
             right: 0;
             text-indent: -999em;
