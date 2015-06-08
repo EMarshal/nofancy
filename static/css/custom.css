@@ -99,6 +99,7 @@ body {
     }
     
     .footer-content a.social {
+        opacity: .5;
         font-size: 100%;
         margin: .5em 1em;
         padding: 0;
@@ -107,9 +108,13 @@ body {
         width: 24px;
     }
     
+    .footer-content a.social:hover {
+        opacity: 1
+    }
+    
     .footer-content a.github {
         border-radius: 50%;
-        background: url("/img/GitHub-Mark-64px.png") no-repeat top left/100%;
+        background: url("/img/mark-github.svg") no-repeat top left/100%;
     }
     
     .footer-content a.feed {
