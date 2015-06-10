@@ -215,12 +215,17 @@ body {
     text-decoration: none;
     color: #484848;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #toggle-content li {
     clear: both;
     height: auto;
     background-color: #F7F7F7;
+}
+
+#toggle {
+    display: none;
 }
 
 
@@ -243,54 +248,52 @@ body {
         display: block;
     }
 
-    body:not(:target) #menu ul {
-        position: relative;
-        z-index: 8;
+    #show-btn {
+        display: none;
+    }
+    
+    input#toggle:checked ~ #show-btn {
+        display: block;
+    }
+
+    input#toggle:checked ~ #hide-btn {
+        display: none;
+    }
+    
+    input#toggle:checked ~ #hide-btn-fullpage {
+        display: none;
+    }
+    
+    input#toggle:not(:checked) ~ #hide-btn-fullpage {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        text-indent: -999em;
+    }
+    
+    input#toggle:checked ~ ul {
         height: 0;
         transition: height 0.2s;
     }
+    
+    input#toggle:not(:checked) ~ ul {
+        display: block;
+        z-index: 8;
+        height: 2em;
+        transition: height 0.2s;
+    }
 
-    body:not(:target) #menu li {
-        width: 100%;
+    input#toggle:checked ~ ul > li {
         height: 0;
         overflow: hidden;
     }
 
-    body:not(:target) #menu:target li {
+    input#toggle:not(:checked) ~ ul > li {
+        width: 100%;
         height: 2em;
         overflow: visible;
     }
-
-    body:not(:target) #menu:target ul {
-        display: block;
-        height: 2em;
-        transition: height 0.2s;
-    }
-
-    body:not(:target) #menu:target #show-btn {
-        display: none;
-    }
-
-    body:not(:target) #menu:target #hide-btn {
-        display: inline;
-    }
-
-    body:not(:target) #hide-btn {
-        display: none;
-    }
-
-    body:not(:target) #menu:target .back {
-        height: 0;
-        line-height: 0;
-    }
-
-        body:not(:target) #menu:target .back a {
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            text-indent: -999em;
-            z-index: -1;
-        }
 }
