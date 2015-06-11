@@ -9,7 +9,7 @@ body {
 }
 
 .nav-menu {
-    border-bottom: 1px solid #EEE;
+    border-bottom: .1em solid #EEE;
     white-space: normal;
 }
 
@@ -90,37 +90,37 @@ body {
 
 
 .footer-content {
-    border-top: 1px solid #EEE;
+    border-top: .1em solid #EEE;
 }
 
     .footer-content a {
         font-size: 80%;
         color: #aaa;
     }
-    
-    .footer-content a.social {
-        opacity: .5;
-        font-size: 100%;
-        margin: .5em 1em;
-        padding: 0;
-        text-indent: -9999px;
-        height: 24px;
-        width: 24px;
-    }
-    
-    .footer-content a.social:hover {
-        opacity: 1
-    }
-    
-    .footer-content a.github {
-        border-radius: 50%;
-        background: url("/img/mark-github.svg") no-repeat top left/100%;
-    }
-    
-    .footer-content a.feed {
-        border-radius: 20%;
-        background: url("/img/feed-icon.svg") no-repeat top left/100%;
-    }
+
+        .footer-content a.social {
+            opacity: .5;
+            font-size: 100%;
+            margin: .5em 1em;
+            padding: 0;
+            text-indent: -999em;
+            height: 1.5em;
+            width: 1.5em;
+        }
+
+            .footer-content a.social:hover {
+                opacity: 1;
+            }
+
+        .footer-content a.github {
+            border-radius: 50%;
+            background: url("/img/mark-github.svg") no-repeat top left/100%;
+        }
+
+        .footer-content a.feed {
+            border-radius: 20%;
+            background: url("/img/feed-icon.svg") no-repeat top left/100%;
+        }
 
     .footer-content ul {
         height: auto;
@@ -158,7 +158,7 @@ body {
     overflow: auto;
     padding: 0;
     padding-bottom: 3em;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.4;
 }
 
@@ -173,27 +173,27 @@ body {
     }
 
 .post h1 {
-    font-size: 28px;
+    font-size: 1.8em;
 }
 
 .post h2 {
-    font-size: 25px;
+    font-size: 1.6em;
 }
 
 .post h3 {
-    font-size: 23px;
+    font-size: 1.4em;
 }
 
 .post h4 {
-    font-size: 21px;
+    font-size: 1.3em;
 }
 
 .post h5 {
-    font-size: 19px;
+    font-size: 1.2em;
 }
 
 .post h6 {
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 .post-title {
@@ -203,8 +203,8 @@ body {
 
     .post-title h1 {
         font-weight: bold;
-        font-size: 39px;
-        line-height: 40px;
+        font-size: 2.5em;
+        line-height: 1em;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -228,72 +228,77 @@ body {
     display: none;
 }
 
+#toggle-content {
+    display: block;
+}
 
-@media screen and (min-width:768px) {
+#show-btn {
+    display: none;
+}
+
+input#toggle:checked ~ #show-btn {
+    display: block;
+}
+
+input#toggle:checked ~ #hide-btn {
+    display: none;
+}
+
+input#toggle:checked ~ #hide-btn-fullpage {
+    display: none;
+}
+
+input#toggle:not(:checked) ~ #hide-btn-fullpage {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-indent: -999em;
+}
+
+input#toggle:checked ~ ul {
+    height: 0;
+    transition: height 0.2s;
+}
+
+input#toggle:not(:checked) ~ ul {
+    display: block;
+    z-index: 8;
+    height: 2em;
+    transition: height 0.2s;
+}
+
+input#toggle:checked ~ ul > li {
+    height: 0;
+    overflow: hidden;
+}
+
+input#toggle:not(:checked) ~ ul > li {
+    width: 100%;
+    height: 2em;
+    overflow: visible;
+}
+
+@media screen and (min-width:48em) {
     .menu-btn {
         display: none;
     }
 
-    .back {
+    input#toggle:checked ~ #show-btn {
         display: none;
     }
+
+    input#toggle:checked ~ ul {
+        height: auto;
+    }
+
+        input#toggle:checked ~ ul > li {
+            height: auto;
+        }
 
     #toggle-content {
         float: right;
-    }
-}
-
-@media screen and (max-width:767px) {
-    #toggle-content {
-        display: block;
-    }
-
-    #show-btn {
-        display: none;
-    }
-    
-    input#toggle:checked ~ #show-btn {
-        display: block;
-    }
-
-    input#toggle:checked ~ #hide-btn {
-        display: none;
-    }
-    
-    input#toggle:checked ~ #hide-btn-fullpage {
-        display: none;
-    }
-    
-    input#toggle:not(:checked) ~ #hide-btn-fullpage {
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        text-indent: -999em;
-    }
-    
-    input#toggle:checked ~ ul {
-        height: 0;
-        transition: height 0.2s;
-    }
-    
-    input#toggle:not(:checked) ~ ul {
-        display: block;
-        z-index: 8;
-        height: 2em;
-        transition: height 0.2s;
-    }
-
-    input#toggle:checked ~ ul > li {
-        height: 0;
-        overflow: hidden;
-    }
-
-    input#toggle:not(:checked) ~ ul > li {
-        width: 100%;
-        height: 2em;
-        overflow: visible;
     }
 }
