@@ -204,6 +204,12 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
         margin-top: 0;
         margin-bottom: 0;
     }
+    
+.highlight pre {
+    overflow: visible;
+    white-space: pre-wrap;
+    font-family: "Menlo", "Consolas", monospace;
+}
 
 .menu-btn {
     float: right;
