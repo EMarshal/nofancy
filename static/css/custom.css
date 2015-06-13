@@ -289,7 +289,7 @@ input#toggle:not(:checked) ~ ul > li {
     }
 
     input#toggle:checked ~ ul {
-        max-height: 2em;
+        max-height: 2.4em;
     }
 
         input#toggle:checked ~ ul > li {
