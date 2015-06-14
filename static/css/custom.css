@@ -25,6 +25,10 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     .header ul li {
         height: auto;
     }
+    
+    .header ul {
+        transition: max-height .2s;
+    }
 
     .header a {
         font-weight: 600;
@@ -260,15 +264,13 @@ input#toggle:not(:checked) ~ #hide-btn-fullpage {
 
 input#toggle:checked ~ ul {
     max-height: 0;
-    transition: max-height .2s;
     overflow: hidden;
 }
 
 input#toggle:not(:checked) ~ ul {
     display: block;
     z-index: 8;
-    max-height: 20em;
-    transition: max-height .2s;
+    max-height: 2.4em;
 }
 
 input#toggle:checked ~ ul > li {
