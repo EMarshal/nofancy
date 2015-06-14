@@ -66,6 +66,7 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 .footnote {
     color: #777;
     font-size: x-small;
+    font-weight: 500;
 }
 
     .footnote a {
@@ -140,13 +141,11 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 }
 
 .post {
-    letter-spacing: normal;
     padding-left: .5em;
 }
 
     .post h1, h2, h3, h4, h5, h6 {
-        font-weight: bold;
-        letter-spacing: normal;
+        font-weight: 500;
     }
 
 .post-content {
@@ -198,7 +197,7 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 }
 
     .post-title h1 {
-        font-weight: bold;
+        font-weight: 500;
         font-size: 2.5em;
         line-height: 1em;
         margin-top: 0;
@@ -216,7 +215,7 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     padding: .5em 1em;
     text-decoration: none;
     color: #484848;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
 }
 
