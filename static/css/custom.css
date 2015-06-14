@@ -29,6 +29,7 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     .header a {
         font-weight: 600;
         font-family: "Avenir Next", "Corbel", sans-serif;
+        transition: background-color .1s;
     }
 
 .pull-right {
@@ -104,6 +105,7 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
             text-indent: -999em;
             height: 1.5em;
             width: 1.5em;
+            transition: opacity .1s;
         }
 
             .footer-content a.social:hover {
@@ -160,6 +162,7 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
 .post a {
     color: #c05b4d;
     text-decoration: none;
+    transition: color .1s;
 }
 
     .post a:hover {
