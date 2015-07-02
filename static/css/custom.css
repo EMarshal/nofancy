@@ -125,6 +125,11 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
             border-radius: 20%;
             background: url("/img/feed-icon.svg") no-repeat top left/100%;
         }
+        
+        .footer-content a.goodreads {
+            border-radius: 13%;
+            background: url("/img/goodreads_icon.png") no-repeat top left/100%;
+        }
 
     .footer-content ul {
         height: auto;

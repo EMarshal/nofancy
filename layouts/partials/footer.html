@@ -14,9 +14,16 @@
                     <a href="https://github.com/{{ .Site.Author.github }}" target="_blank" class="pure-menu-link social github">GitHub</a>
                 </li>
                 {{ end }}
+                {{ if .Site.Author.feed }}
                 <li class="pure-menu-item">
                     <a href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" target="_blank" class="pure-menu-link social feed">Feed</a>
                 </li>
+                {{ end }}
+                {{ if .Site.Author.goodreads }}
+                <li class="pure-menu-item">
+                    <a href="https://www.goodreads.com/user/show/{{ .Site.Author.goodreads }}" target="_blank" class="pure-menu-link social goodreads">Goodreads</a>
+                </li>
+                {{ end }}
                 {{ if .Site.Author.linkedin }}
                 <li class="pure-menu-item">
                     <a href="https://www.linkedin.com/in/{{ .Site.Author.linkedin }}" target="_blank" class="pure-menu-link">LinkedIn</a>
