@@ -6,10 +6,20 @@ html {
 
 body {
     background-color: #F7F7F7;
+    line-height: normal;
+    color: #000;
 }
 
-html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+html, button, input, select, textarea, body {
     font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+img {
+    height: auto;
+}
+
+.hidden, [hidden] {
+    display: none !important;
 }
 
 .nav-menu {
