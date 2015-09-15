@@ -230,6 +230,7 @@ img {
     overflow: visible;
     white-space: pre-wrap;
     font-family: "Menlo", "Consolas", monospace;
+    font-size: 0.7em;
 }
 
 .menu-btn {
