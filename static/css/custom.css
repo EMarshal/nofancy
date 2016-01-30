@@ -286,7 +286,7 @@ input#toggle:checked ~ ul {
 input#toggle:not(:checked) ~ ul {
     display: block;
     z-index: 8;
-    max-height: 2.4em;
+    max-height: 4.7em;
 }
 
 input#toggle:checked ~ ul > li {
