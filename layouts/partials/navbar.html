@@ -2,6 +2,7 @@
     <div class="grd-row-col-1-6--md"></div>
     <div class="grd-row-col-4-6--md">
         <div class="mobile pure-menu pure-menu-horizontal nav-menu">
+            {{ $baseurl := .Site.BaseURL }}
             <a href="{{$baseurl}}" class="site-title pure-menu-heading" id="toggle-home">{{ .Site.Title }}</a>
             <input type="checkbox" id="toggle" checked hidden>
             <label for="toggle" class="menu-btn" id="show-btn">&#9776;</label>
