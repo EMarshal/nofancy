@@ -3,32 +3,37 @@
 <div class="grd grd-row">
     <div class="grd-row-col-1-6--md"></div>
     <div class="grd-row-col-4-6--md">
-        <p class="posts-name">{{ .Title }}:</p>
-        <ul class="posts">
-            {{ $baseurl := .Site.BaseURL }}
-            {{ range $name, $page := .Data.Pages }}
-            {{ if eq .Type "post" }}
-            <li>
-                <a href="{{ .Permalink }}">{{ $page.Title }}</a>
-                <p class="footnote">
-                    submitted <time datetime="{{ $page.Date.Format "2006-01-0" }}" class="post-list">{{ $page.Date.Format "2006-01-02" }}</time>
-                    {{ if or $page.Params.tags $page.Params.categories $page.Params.series }}
-                    to
+        <div class="post-content">
+            <p class="posts-name">{{ .Title }}:</p>
+            <ul class="posts">
+                {{ $baseurl := .Site.BaseURL }}
+                {{ range $name, $page := .Data.Pages }}
+                {{ if eq .Type "post" }}
+                <li>
+                    {{ if .Draft }}
+                    DRAFT:
                     {{ end }}
-                    {{ with $page.Params.tags }}
-                    tags:[ {{ range $page.Params.tags}}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}]
-                    {{ end }}
-                    {{ with $page.Params.categories }}
-                    categories:[ {{ range $page.Params.categories }}<a href="{{ $baseurl }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}]
-                    {{ end }}
-                    {{ with $page.Params.series }}
-                    series:[ {{ range $page.Params.series }}<a href="{{ $baseurl }}series/{{ . | urlize }}">{{ . }}</a> {{ end }}]
-                    {{ end }}
-                </p>
-            </li>
-            {{ end }}
-            {{ end }}
-        </ul>
+                    <a href="{{ .Permalink }}">{{ $page.Title }}</a>
+                    <p class="footnote">
+                        submitted <time datetime="{{ $page.Date.Format "2006-01-0" }}" class="post-list">{{ $page.Date.Format "2006-01-02" }}</time>
+                        {{ if or $page.Params.tags $page.Params.categories $page.Params.series }}
+                        to
+                        {{ end }}
+                        {{ with $page.Params.tags }}
+                        tags:[ {{ range $page.Params.tags}}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+                        {{ end }}
+                        {{ with $page.Params.categories }}
+                        categories:[ {{ range $page.Params.categories }}<a href="{{ $baseurl }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+                        {{ end }}
+                        {{ with $page.Params.series }}
+                        series:[ {{ range $page.Params.series }}<a href="{{ $baseurl }}series/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+                        {{ end }}
+                    </p>
+                </li>
+                {{ end }}
+                {{ end }}
+            </ul>
+        </div>
     </div>
     <div class="grd-row-col-1-6--md"></div>
 </div>

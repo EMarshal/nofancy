@@ -61,7 +61,7 @@ img {
 .posts {
     list-style-type: none;
     padding-left: 1em;
-    padding-bottom: 3em;
+    line-height: normal;
 }
 
     .posts li p {
@@ -151,7 +151,6 @@ img {
 
 #gototop-btn {
     display: inline-block;
-    color: #aaa;
     font-size: 80%;
 }
 
@@ -176,6 +175,11 @@ img {
     padding-bottom: 3em;
     font-size: 1em;
     line-height: 1.4;
+}
+
+.post-content img {
+	max-width: 100%;
+	height: auto;
 }
 
 .post a {
