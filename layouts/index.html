@@ -30,6 +30,14 @@
                         series:[ {{ range $page.Params.series }}<a href="{{ $baseurl }}series/{{ . | urlize }}">{{ . }}</a> {{ end }}]
                         {{ end }}
                     </p>
+                    <p>
+                        {{ .Summary }}
+                    </p>
+                    <p class ="footnote">
+                        {{ if .Truncated }}
+                        <a href="{{ .RelPermalink }}">Read More…</a>
+                        {{ end }}
+                    </p>
                 </li>
                 {{ end }}
                 {{ end }}
