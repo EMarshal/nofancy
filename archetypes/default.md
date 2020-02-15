@@ -1,6 +1,6 @@
 +++
-title = "{{ replace .Name "-" " "}}"
-categories = ["misc"]
+title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ now.Format "2006-01-02" }}
+categories = ["misc"]
 draft = "true"
 +++
